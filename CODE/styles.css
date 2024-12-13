@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f0f0f0;
+}
+
+.gallery-container {
+    position: relative;
+    width: 1400px; /* Set your desired width */
+}
+
+.hover-container {
+    position: relative;
+    display: none; /* Hide all initially */
+}
+
+.image, .video {
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video {
+    display: none; /* Hide video initially */
+}
+
+.hover-container:hover .image {
+    display: none; /* Hide image on hover */
+}
+
+.hover-container:hover .video {
+    display: block; /* Show video on hover */
+}
+
+/* Ensure video plays with sound */
+.video {
+    display: none; /* Hide video initially */
+}
+
+.hover-container:hover .video {
+    display: block; /* Show video on hover */
+}
+
+.arrow {
+    position: absolute;
+    margin-top: 120px;
+    top: 100%;
+    transform: translateY(100%);
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: -40px; /* Position left arrow */
+}
+
+.right-arrow {
+    right: -40px; /* Position right arrow */
+}
+
+/* Styles for text boxes */
+.text-box-1,
+.text-box-2 {
+    text-align: left; /* Center the text */
+    font-size: 12px; /* Adjust font size as needed */
+    color: black;
+    font-family: "Verdana", sans-serif;
+    line-height: 1.7; /* 1.5 times the font size */
+}
+
+.text-box-1 {
+    position: absolute;
+   margin-top: 390px; /* Space above the first text box */
+   margin-left: 1.5%;
+   margin-right: 55%;
+}
+
+.text-box-2 {
+    position: absolute;
+   margin-top: 390px; /* Space above the second text box */
+   margin-left: 52%;
+   margin-right: 2%;
+}
+
+
